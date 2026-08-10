@@ -64,13 +64,20 @@
 // Dica: use .classList.add("destaque")
 
 
-
+// aaaaaaaaaaaaaaaaaaaaaa 6777777
 // ---------- Exercicio 9 ----------
 // Ao clicar no botao, remova o ultimo <li> da #lista9
 //
 // Dica: use .lastElementChild e .removeChild()
 
+document.getElementById("btn9").addEventListener("click", function() {
+const removido = document.getElementById("lista9")
+const ultimo = removido.lastElementChild
+if (ultimo){
+    removido.removeChild(ultimo)
+}
 
+})
 
 // ---------- Exercicio 10 ----------
 // Ao clicar no botao, troque o src da #imagem10 para
