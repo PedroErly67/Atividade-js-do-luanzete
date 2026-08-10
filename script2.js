@@ -9,7 +9,11 @@
 //
 // Dica: use .disabled = true
 
-
+const botao = document.getElementById("btn11");
+botao.addEventListener("click", function () {
+    botao.style.backgroundColor = "gray";
+    botao.disabled = true;
+})
 
 // ---------- Exercicio 12 ----------
 // Ao clicar no botao #btn12, troque o texto dele
@@ -17,7 +21,10 @@
 //
 // Dica: use .textContent no proprio botao
 
-
+const botao12 = document.getElementById("btn12");
+botao12.addEventListener("click", function () {
+  botao12.textContent = "Curtido"
+})
 
 // ---------- Exercicio 13 ----------
 // Ao clicar no botao, mude o tamanho da fonte do
